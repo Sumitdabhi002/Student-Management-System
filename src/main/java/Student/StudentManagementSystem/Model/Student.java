@@ -13,7 +13,7 @@ import lombok.Data;
 @Data
 public class Student {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @NotBlank(message ="Name is required")
     private String name;

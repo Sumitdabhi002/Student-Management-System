@@ -1,12 +1,9 @@
 package Student.StudentManagementSystem.Services;
 
-
 import Student.StudentManagementSystem.Model.Student;
 import Student.StudentManagementSystem.Repo.StudentRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-
 import java.util.List;
 import java.util.Optional;
 
@@ -23,7 +20,6 @@ public class StudentServices {
     public Optional<Student> getStudentById(int id) {
         return repo.findById(id);
     }
-
 
     public Student addStudent(Student stud) {
         return repo.save(stud);
